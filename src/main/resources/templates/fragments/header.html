@@ -13,6 +13,11 @@
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" th:href="@{/dist/css/bootstrap.min.css}" rel="stylesheet">
 
+    <!-- Bootstrap CSS -->
+    <!--     <link href="../../css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"-->
+          <!--crossorigin="anonymous">-->
+
     <!-- Custom styles for this template -->
     <link href="../../css/carousel.css" th:href="@{/css/carousel.css}" rel="stylesheet">
 
@@ -56,11 +61,14 @@
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">关于</a>
                     </li>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="搜索">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+                    </form>
                 </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="搜索">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
-                </form>
+
+                <a href="/login" class="btn btn-outline-success my-2 my-sm-0" type="submit">登录</a>
+                <a href="/register" class="btn btn-outline-success my-2 my-sm-0" type="submit">注册</a>
             </div>
         </nav>
     </header>
